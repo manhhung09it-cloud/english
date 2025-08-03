@@ -30,6 +30,7 @@ jobs:
         rsync -av --exclude='.git' ./ target-repo/
 
         cd target-repo
+        rm .github/workflows/push-to-public.yml
         git add .
         git commit -m "Update from private source" || echo "Nothing to commit"
         git push origin main
