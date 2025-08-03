@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English for kids</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f7f7f7;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .grid-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Landing Page Grid View</h1>
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://example.com/page1" target="_blank">
+        <img src="https://via.placeholder.com/400x300?text=Image+1" alt="Image 1">
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://example.com/page2" target="_blank">
+        <img src="https://via.placeholder.com/400x300?text=Image+2" alt="Image 2">
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://example.com/page3" target="_blank">
+        <img src="https://via.placeholder.com/400x300?text=Image+3" alt="Image 3">
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://example.com/page4" target="_blank">
+        <img src="https://via.placeholder.com/400x300?text=Image+4" alt="Image 4">
+      </a>
+    </div>
+    <!-- Thêm nhiều grid-item hơn nếu cần -->
+  </div>
+</body>
+</html>
