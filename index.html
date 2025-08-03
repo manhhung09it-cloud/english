@@ -2,24 +2,14 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English for kids</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page Grid View với Bootstrap</title>
+  <!-- Link Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f7f7f7;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
     .grid-item img {
       width: 100%;
       height: auto;
-      display: block;
       border-radius: 8px;
       transition: transform 0.2s, box-shadow 0.2s;
       cursor: pointer;
@@ -31,29 +21,35 @@
   </style>
 </head>
 <body>
-  <h1>Landing Page Grid View</h1>
-  <div class="grid-container">
-    <div class="grid-item">
+
+<div class="container py-4">
+  <h1 class="text-center mb-4">Landing Page Grid View</h1>
+  <div class="row g-4">
+    <div class="col-12 col-md-6 grid-item">
       <a href="https://example.com/page1" target="_blank">
-        <img src="https://via.placeholder.com/400x300?text=Image+1" alt="Image 1">
+        <img src="https://via.placeholder.com/600x400?text=Image+1" alt="Image 1">
       </a>
     </div>
-    <div class="grid-item">
+    <div class="col-12 col-md-6 grid-item">
       <a href="https://example.com/page2" target="_blank">
-        <img src="https://via.placeholder.com/400x300?text=Image+2" alt="Image 2">
+        <img src="https://via.placeholder.com/600x400?text=Image+2" alt="Image 2">
       </a>
     </div>
-    <div class="grid-item">
+    <div class="col-12 col-md-6 grid-item">
       <a href="https://example.com/page3" target="_blank">
-        <img src="https://via.placeholder.com/400x300?text=Image+3" alt="Image 3">
+        <img src="https://via.placeholder.com/600x400?text=Image+3" alt="Image 3">
       </a>
     </div>
-    <div class="grid-item">
+    <div class="col-12 col-md-6 grid-item">
       <a href="https://example.com/page4" target="_blank">
-        <img src="https://via.placeholder.com/400x300?text=Image+4" alt="Image 4">
+        <img src="https://via.placeholder.com/600x400?text=Image+4" alt="Image 4">
       </a>
     </div>
-    <!-- Thêm nhiều grid-item hơn nếu cần -->
+    <!-- Thêm nhiều item hơn nếu cần -->
   </div>
+</div>
+
+<!-- Link Bootstrap JS (không bắt buộc nếu chỉ cần CSS) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
